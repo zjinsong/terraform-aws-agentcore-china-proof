@@ -11,7 +11,7 @@
 ```powershell
 terraform init
 terraform validate
-terraform plan -out=proof.tfplan
+terraform plan "-out=proof.tfplan"
 terraform apply proof.tfplan
 python invoke.py
 terraform plan -detailed-exitcode
